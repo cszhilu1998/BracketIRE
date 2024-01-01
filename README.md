@@ -17,14 +17,14 @@ It is challenging but highly desired to acquire high-quality photos with clear c
 
 ## 2. Comparison of Multi-Image Processing Manners
 
-<p align="center"><img src="multi_pro.png" width="95%"></p>
+<p align="center"><img src="imgs/multi_pro.png" width="95%"></p>
 
 
     
 
 ## 3. Real-World Results
 
-<p align="center"><img src="real-1.png" width="95%"></p>
+<p align="center"><img src="imgs/real-1.png" width="95%"></p>
 
-<p align="center"><img src="real-2.png" width="95%"></p>
+<p align="center"><img src="imgs/real-2.png" width="95%"></p>
 
