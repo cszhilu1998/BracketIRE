@@ -1,8 +1,8 @@
 # BracketIRE
 
-PyTorch implementation of [**Bracketing is All You Need: Unifying Image Restoration and Enhancement Tasks with Multi-Exposure Images**](https://arxiv.org/abs/2401.xxxxx) 
+PyTorch implementation of [**Bracketing is All You Need: Unifying Image Restoration and Enhancement Tasks with Multi-Exposure Images**](https://arxiv.org/abs/2401.00766) 
 
-[![arXiv](https://img.shields.io/badge/arXiv-2401.xxxxx-b10.svg)](https://arxiv.org/abs/2401.xxxxx)
+[![arXiv](https://img.shields.io/badge/arXiv-2401.00766-b10.svg)](https://arxiv.org/abs/2401.00766)
 ![visitors](https://visitor-badge.laobi.icu/badge?page_id=cszhilu1998.BracketIRE)
 
 - In this work, we propose to utilize bracketing photography to unify image restoration and enhancement tasks, including image denoising, deblurring, high dynamic range reconstruction, and super-resolution.
