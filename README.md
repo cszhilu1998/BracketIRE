@@ -5,9 +5,17 @@ PyTorch implementation of [**Bracketing is All You Need: Unifying Image Restorat
 [![arXiv](https://img.shields.io/badge/arXiv-2401.00766-b10.svg)](https://arxiv.org/abs/2401.00766)
 ![visitors](https://visitor-badge.laobi.icu/badge?page_id=cszhilu1998.BracketIRE)
 
-- In this work, we propose to utilize bracketing photography to unify image restoration and enhancement tasks, including image denoising, deblurring, high dynamic range reconstruction, and super-resolution.
+In this work, we propose to utilize bracketing photography to unify image restoration and enhancement tasks, including image denoising, deblurring, high dynamic range reconstruction, and super-resolution.
 
-- Codes will be released in a few weeks.
+<!-- - Codes will be released in a few weeks. -->
+
+## News
+
+
+* **`2024-02-05`:** The codes, pre-trained models, and ISP for the Bracketing Image Restoration and Enhancement Challenge are released in [NTIRE2024](./NTIRE2024/) folder. (The codes have been restructured. If there are any problems with the codes, please contact us.)
+
+* **`2024-02-04`:** We organize the Bracketing Image Restoration and Enhancement Challenge in [NTIRE 2024](https://cvlai.net/ntire/2024/) (CVPR Workshop), including [Track 1 (BracketIRE Task)](https://codalab.lisn.upsaclay.fr/competitions/17573) and [Track 2 (BracketIRE+ Task)](https://codalab.lisn.upsaclay.fr/competitions/17574). Details can bee seen in [NTIRE2024/README.md](./NTIRE2024/README.md). Welcome to participate!
+
 
 
 ## 1. Abstract
