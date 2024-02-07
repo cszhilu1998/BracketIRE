@@ -1,5 +1,8 @@
 # NTIRE Workshop and Challenges @ CVPR 2024 -- Bracketing Image Restoration and Enhancement
 
+**Welcome to join the WeChat group for communication by scanning the code below:**
+
+<p align="center"><img src="../imgs/BracketIRE.jpeg" width="35%"></p>
 
 ## 1. Overview
 
