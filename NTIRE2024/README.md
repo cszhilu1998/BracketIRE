@@ -2,7 +2,7 @@
 
 **Welcome to join the WeChat group for communication by scanning the code below:**
 
-<p align="center"><img src="../imgs/BracketIRE_0304.jpeg" width="35%"></p>
+<p align="center"><img src="../imgs/BracketIRE_0309.png" width="35%"></p>
 
 ## 1. Overview
 
