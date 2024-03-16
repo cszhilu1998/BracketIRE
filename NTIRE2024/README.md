@@ -2,7 +2,7 @@
 
 **Welcome to join the WeChat group for communication by scanning the code below:**
 
-<p align="center"><img src="../imgs/BracketIRE_0309.png" width="35%"></p>
+<p align="center"><img src="../imgs/BracketIRE_0316.jpeg" width="35%"></p>
 
 ## 1. Overview
 
@@ -10,11 +10,11 @@
 
 - 2024.01.30 Release of train data (input and output) and validation data (inputs only) <br>
 - 2024.02.04 Validation server online <br>
-- 2024.03.07 Final test data release (inputs only) <br>
-- 2024.03.14 Test output results submission deadline <br>
-- 2024.03.15 Fact sheets and code/executable submission deadline <br>
-- 2024.03.17 Preliminary test results release to the participants <br>
-- 2024.04.01 Paper submission deadline for entries from the challenge <br>
+- 2024.03.16 Final test data release (inputs only) <br>
+- 2024.03.21 Test output results submission deadline <br>
+- 2024.03.22 Fact sheets and code/executable submission deadline <br>
+- 2024.03.24 Preliminary test results release to the participants <br>
+- 2024.04.05 Paper submission deadline for entries from the challenge <br>
 
 
 ### 1.2 Challenge overview
@@ -50,11 +50,14 @@ Please download the data from Baidu Netdisk (Chinese: 百度网盘).
 
     - Training data: https://pan.baidu.com/s/12OITbXNtJgFvMPiJtBCq7g?pwd=fusg
     - Validation data: https://pan.baidu.com/s/15uqtkdtBzSTt9kQEozMWMg?pwd=rp3y
+    - Testing data: https://pan.baidu.com/s/1e5pJeq85u2lwFnDAzXa9YA?pwd=dju6
 
 - Track 2: BracketIRE+ task
 
     - Training data: https://pan.baidu.com/s/1Dn4qqQA3b45Z4-yH1-wBqw?pwd=wyg9
     - Validation data: https://pan.baidu.com/s/1vo_-GQHwLpdGE8uQp9M5Xw?pwd=1sf4
+    - Testing data: https://pan.baidu.com/s/1Gd5DL9VtRqWto5EETwTH_g?pwd=du3j
+
 
 
 [1] Zhilu Zhang, Shuohao Zhang, Renlong Wu, Zifei Yan, and Wangmeng Zuo. Bracketing is All You Need: Unifying Image Restoration and Enhancement Tasks with Multi-Exposure Images. arXiv preprint at [arXiv:2401.00766](https://arxiv.org/abs/2401.00766) (2024).
