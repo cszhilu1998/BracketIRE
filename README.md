@@ -1,6 +1,6 @@
 # BracketIRE
 
-PyTorch implementation of [**Bracketing is All You Need: Unifying Image Restoration and Enhancement Tasks with Multi-Exposure Images**](https://arxiv.org/abs/2401.00766) 
+PyTorch implementation of [**Exposure Bracketing is All You Need for Unifying Image Restoration and Enhancement Tasks**](https://arxiv.org/abs/2401.00766) 
 
 [![arXiv](https://img.shields.io/badge/arXiv-2401.00766-b10.svg)](https://arxiv.org/abs/2401.00766)
 ![visitors](https://visitor-badge.laobi.icu/badge?page_id=cszhilu1998.BracketIRE)
@@ -25,14 +25,28 @@ It is challenging but highly desired to acquire high-quality photos with clear c
 
 ## 2. Comparison of Multi-Image Processing Manners
 
-<p align="center"><img src="imgs/multi_pro.png" width="95%"></p>
+<p align="center"><img src="imgs/multi_pro1.png" width="95%"></p>
 
 
     
 
 ## 3. Real-World Results
 
-<p align="center"><img src="imgs/real-1.png" width="95%"></p>
 
-<p align="center"><img src="imgs/real-2.png" width="95%"></p>
+<p align="center"><img src="imgs/syn_1.png" width="95%"></p>
 
+<p align="center"><img src="imgs/real-1a.png" width="95%"></p>
+
+<p align="center"><img src="imgs/real-2a.png" width="95%"></p>
+
+
+
+## 4. Citation
+If you find it useful in your research, please consider citing:
+
+    @article{BracketIRE,
+        title={Exposure Bracketing is All You Need for Unifying Image Restoration and Enhancement Tasks},
+        author={Zhang, Zhilu and Zhang, Shuohao and Wu, Renlong and Yan, Zifei and Zuo, Wangmeng},
+        journal={arXiv preprint arXiv:2401.00766},
+        year={2024}
+    }

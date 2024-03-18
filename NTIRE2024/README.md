@@ -150,6 +150,8 @@ The body of the mail shall include the following:
 
 The executable/source code should include trained models or necessary parameters so that we could run it and reproduce results. There should be a README or descriptions that explains how to execute the executable/code. Factsheet must be a compiled pdf file and a zip with the corresponding .tex source files. Please provide a detailed explanation.
 
+We provide some notes and a factsheet template in  https://www.overleaf.com/read/xzvzvhrdrscv#8ef9cb. Please write a factsheet according to it.
+
 ## 4. Organizers
 
 
