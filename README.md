@@ -12,10 +12,27 @@ In this work, we propose to utilize bracketing photography to unify image restor
 ## News
 
 
+* **`2024-03-26`:** The synthetic dataset has been released.
+
 * **`2024-02-05`:** The codes, pre-trained models, and ISP for the Bracketing Image Restoration and Enhancement Challenge are released in [NTIRE2024](./NTIRE2024/) folder. (The codes have been restructured. If there are any problems with the codes, please contact us.)
 
 * **`2024-02-04`:** We organize the Bracketing Image Restoration and Enhancement Challenge in [NTIRE 2024](https://cvlai.net/ntire/2024/) (CVPR Workshop), including [Track 1 (BracketIRE Task)](https://codalab.lisn.upsaclay.fr/competitions/17573) and [Track 2 (BracketIRE+ Task)](https://codalab.lisn.upsaclay.fr/competitions/17574). Details can bee seen in [NTIRE2024/README.md](./NTIRE2024/README.md). Welcome to participate!
 
+
+
+## Synthetic Datasets
+
+Please download the data from Baidu Netdisk (Chinese: 百度网盘).
+
+- BracketIRE task
+
+    - Training data: https://pan.baidu.com/s/12OITbXNtJgFvMPiJtBCq7g?pwd=fusg
+    - Testing data: https://pan.baidu.com/s/1bRQ5lhYPHBYEO_AtA2VV8Q?pwd=adny
+
+- BracketIRE+ task
+
+    - Training data: https://pan.baidu.com/s/1Dn4qqQA3b45Z4-yH1-wBqw?pwd=wyg9
+    - Testing data: https://pan.baidu.com/s/1achkCxCqpXLMpbg91ta26A?pwd=idfv
 
 
 ## 1. Abstract
