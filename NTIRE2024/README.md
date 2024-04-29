@@ -1,6 +1,11 @@
 # NTIRE Workshop and Challenges @ CVPR 2024 -- Bracketing Image Restoration and Enhancement
 
 
+**The challenge has ended.**
+
+
+**The code in this page is out of date. If you want to try [BracketIRE and BracketIRE+](https://arxiv.org/abs/2401.00766) tasks, please refer to the code in the '[./code](./code)' folder.**
+
 ## 1. Overview
 
 ### 1.1 Important dates
