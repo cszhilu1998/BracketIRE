@@ -1,6 +1,12 @@
 # Exposure Bracketing is All You Need
 
-PyTorch implementation of [**Exposure Bracketing is All You Need for Unifying Image Restoration and Enhancement Tasks**](https://arxiv.org/abs/2401.00766) 
+Official PyTorch implementation of **Exposure Bracketing is All You Need**
+
+
+> [**Exposure Bracketing is All You Need for Unifying Image Restoration and Enhancement Tasks**](https://arxiv.org/abs/2401.00766)<br>
+> [Zhilu Zhang](https://scholar.google.com/citations?user=8pIq2N0AAAAJ), [Shuohao Zhang](https://scholar.google.com/citations?hl=zh-CN&user=PwP5O3MAAAAJ), [Renlong Wu](https://scholar.google.com/citations?hl=zh-CN&user=UpOaYLoAAAAJ), [Zifei Yan](https://scholar.google.com/citations?hl=zh-CN&user=I4vuL7kAAAAJ), [Wangmeng Zuo](https://scholar.google.com/citations?user=rUOpCEYAAAAJ)
+<br>Harbin Institute of Technology, China
+
 
 [![arXiv](https://img.shields.io/badge/arXiv-2401.00766-b10.svg)](https://arxiv.org/abs/2401.00766)
 ![visitors](https://visitor-badge.laobi.icu/badge?page_id=cszhilu1998.BracketIRE)
@@ -121,3 +127,29 @@ If you find it useful in your research, please consider citing:
         journal={arXiv preprint arXiv:2401.00766},
         year={2024}
     }
+
+    @inproceedings{ntire2024bracketing,
+        title={{NTIRE} 2024 Challenge on Bracketing Image Restoration and Enhancement: Datasets, Methods and Results},
+        author={Zhang, Zhilu and Zhang, Shuohao and Wu, Renlong and Zuo, Wangmeng and Timofte, Radu and others},
+        booktitle={CVPR Workshops},
+        year={2024}
+    }
+
+This work is also a continuation of our previous works, i.e., [SelfIR](https://github.com/cszhilu1998/SelfIR) (NeurIPS 2022) and [SelfHDR](https://github.com/cszhilu1998/SelfHDR) (ICLR 2024). If you are interested in them, please consider citing:
+
+    @article{SelfIR,
+        title={Self-supervised Image Restoration with Blurry and Noisy Pairs},
+        author={Zhang, Zhilu and Xu, Rongjian and Liu, Ming and Yan, Zifei and Zuo, Wangmeng},
+        journal={NeurIPS},
+        year={2022}
+    }
+
+    @inproceedings{SelfHDR,
+        title={Self-Supervised High Dynamic Range Imaging with Multi-Exposure Images in Dynamic Scenes},
+        author={Zhang, Zhilu and Wang, Haoyu and Liu, Shuai and Wang, Xiaotao and Lei, Lei and Zuo, Wangmeng},
+        booktitle={ICLR},
+        year={2024}
+    }
+
+ 
+
