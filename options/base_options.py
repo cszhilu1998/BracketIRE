@@ -22,7 +22,6 @@ class BaseOptions():
         parser.add_argument('--dataroot', type=str, default='')
         parser.add_argument('--dataset_name', type=str, default=['eth'], nargs='+')
         parser.add_argument('--max_dataset_size', type=int, default=inf)
-        # parser.add_argument('--scale', type=int, default=4, help='Super-resolution scale.')
         parser.add_argument('--frame_num', type=int, default=5)
         parser.add_argument('--batch_size', type=int, default=16)
         parser.add_argument('--patch_size', type=int, default=48)
@@ -86,10 +85,6 @@ class BaseOptions():
         parser.add_argument('--calc_metrics', type=str2bool, default=False)
         parser.add_argument('--save_imgs', type=str2bool, default=False)
         parser.add_argument('--visual_full_imgs', type=str2bool, default=False)
-
-        parser.add_argument('--n_scales', type=int, default=3, help='multi-scale deblurring level')
-        parser.add_argument('--n_feats', type=int, default=64, help='number of feature maps')
-        parser.add_argument('--rgb_range', type=int, default=1, help='RGB pixel value ranging from 0')
 
         self.initialized = True
         return parser

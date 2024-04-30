@@ -8,7 +8,7 @@ import numpy as np
 from math import exp, sqrt
 from torch.nn import L1Loss, MSELoss
 from torchvision import models
-from data.degrade.process import demosaic
+from util.process import demosaic
 
 
 def gaussian(window_size, sigma):

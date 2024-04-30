@@ -22,9 +22,7 @@ http://timothybrooks.com/tech/unprocessing
 import numpy as np
 import torch
 import torch.nn as nn
-import torch.distributions as tdist
 from colour_demosaicing import demosaicing_CFA_Bayer_Menon2007
-import os
 from isp import demosaic_bayer
 
 
@@ -35,7 +33,6 @@ def apply_gains(bayer_images, red_gains, blue_gains):
     green_gains  = torch.ones_like(red_gains)
     gains = torch.stack([red_gains, green_gains, green_gains, blue_gains], dim=-1)
     gains = gains[:, None, None, :]
-    # print(bayer_images.shape, gains.shape)
     outs  = bayer_images * gains
     return outs
 
@@ -116,8 +113,24 @@ def gamma_compression(images, gamma=2.2):
     # return outs
 
 
+def flatten_raw_image(im_raw_4ch):  # HxWx4
+    """ unpack a 4-channel tensor into a single channel bayer image"""
+    if isinstance(im_raw_4ch, np.ndarray):
+        im_out = np.zeros_like(im_raw_4ch, shape=(im_raw_4ch.shape[0] * 2, im_raw_4ch.shape[1] * 2))
+    elif isinstance(im_raw_4ch, torch.Tensor):
+        im_out = torch.zeros((im_raw_4ch.shape[0] * 2, im_raw_4ch.shape[1] * 2), dtype=im_raw_4ch.dtype)
+    else:
+        raise Exception
+
+    im_out[0::2, 0::2] = im_raw_4ch[:, :, 0]
+    im_out[0::2, 1::2] = im_raw_4ch[:, :, 1]
+    im_out[1::2, 0::2] = im_raw_4ch[:, :, 2]
+    im_out[1::2, 1::2] = im_raw_4ch[:, :, 3]
+
+    return im_out  # HxW
+
+
 def process(bayer_images, red_gains, blue_gains, cam2rgbs, demosaic_type, lineRGB):
-    # print(bayer_images.shape, red_gains.shape, cam2rgbs.shape)
     """Processes a batch of Bayer RGGB images into sRGB images."""
     # White balance.
     bayer_images = apply_gains(bayer_images, red_gains, blue_gains)
@@ -151,18 +164,10 @@ def process(bayer_images, red_gains, blue_gains, cam2rgbs, demosaic_type, lineRG
     return images
 
 
-def flatten_raw_image(im_raw_4ch):  # HxWx4
-    """ unpack a 4-channel tensor into a single channel bayer image"""
-    if isinstance(im_raw_4ch, np.ndarray):
-        im_out = np.zeros_like(im_raw_4ch, shape=(im_raw_4ch.shape[0] * 2, im_raw_4ch.shape[1] * 2))
-    elif isinstance(im_raw_4ch, torch.Tensor):
-        im_out = torch.zeros((im_raw_4ch.shape[0] * 2, im_raw_4ch.shape[1] * 2), dtype=im_raw_4ch.dtype)
-    else:
-        raise Exception
-
-    im_out[0::2, 0::2] = im_raw_4ch[:, :, 0]
-    im_out[0::2, 1::2] = im_raw_4ch[:, :, 1]
-    im_out[1::2, 0::2] = im_raw_4ch[:, :, 2]
-    im_out[1::2, 1::2] = im_raw_4ch[:, :, 3]
-
-    return im_out  # HxW
+def get_raw2rgb(img, features, demosaic='net', lineRGB=False):
+    img = img.unsqueeze(0)
+    device = img.device 
+    deg_img = process(img, features['red_gain'].to(device), features['blue_gain'].to(device), 
+                      features['cam2rgb'].to(device), demosaic, lineRGB)
+    deg_img = deg_img.squeeze(0)
+    return deg_img

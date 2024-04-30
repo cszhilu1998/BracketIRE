@@ -4,7 +4,9 @@
 **The challenge has ended.**
 
 
-**The code in this page is out of date. If you want to try [BracketIRE and BracketIRE+](https://arxiv.org/abs/2401.00766) tasks, please refer to the code in the '[../code](../code)' folder.**
+**The codes in this page are out of date and have been cleared.**
+
+**If you want to try [BracketIRE and BracketIRE+](https://arxiv.org/abs/2401.00766) tasks, please refer to the codes in the [main](../) folder.**
 
 ## 1. Overview
 
@@ -41,28 +43,9 @@ The aim is to obtain a network design / solution capable to produce high quality
 [1] Zhilu Zhang, Shuohao Zhang, Renlong Wu, Zifei Yan, and Wangmeng Zuo. Bracketing is All You Need: Unifying Image Restoration and Enhancement Tasks with Multi-Exposure Images. arXiv preprint at [arXiv:2401.00766](https://arxiv.org/abs/2401.00766) (2024).
 
 
-### 1.3 Training and validation data
+### 1.3 Dataset
 
-The data is obtained through the simulation process proposed by Zhang et al [1]. Please see their paper for more details. Note that we do not provide degradation scripts during this challenge to avoid potential testing data leakage. And for validation data, we only provide input images.
-
-
-Please download the data from Baidu Netdisk (Chinese: 百度网盘).
-
-- Track 1: BracketIRE task
-
-    - Training data: https://pan.baidu.com/s/12OITbXNtJgFvMPiJtBCq7g?pwd=fusg
-    - Validation data: https://pan.baidu.com/s/15uqtkdtBzSTt9kQEozMWMg?pwd=rp3y
-    - Testing data: https://pan.baidu.com/s/1e5pJeq85u2lwFnDAzXa9YA?pwd=dju6
-
-- Track 2: BracketIRE+ task
-
-    - Training data: https://pan.baidu.com/s/1Dn4qqQA3b45Z4-yH1-wBqw?pwd=wyg9
-    - Validation data: https://pan.baidu.com/s/1vo_-GQHwLpdGE8uQp9M5Xw?pwd=1sf4
-    - Testing data: https://pan.baidu.com/s/1Gd5DL9VtRqWto5EETwTH_g?pwd=du3j
-
-
-
-[1] Zhilu Zhang, Shuohao Zhang, Renlong Wu, Zifei Yan, and Wangmeng Zuo. Bracketing is All You Need: Unifying Image Restoration and Enhancement Tasks with Multi-Exposure Images. arXiv preprint at [arXiv:2401.00766](https://arxiv.org/abs/2401.00766) (2024).
+Please refer to the [README.md](../README.md) in the main folder.
 
 
 ### 1.4 Challenge requirements
@@ -79,35 +62,7 @@ Please download the data from Baidu Netdisk (Chinese: 百度网盘).
 
 ## 2. Quick Start
 
-### 2.1 Prerequisites
-- Python 3.x and **PyTorch 1.12**.
-- OpenCV, NumPy, Pillow, timm, tqdm, scikit-image and tensorboardX.
-
-### 2.2 Pre-trained models
-
-- Link: https://pan.baidu.com/s/10bQxDHaZ0sKB87tRooIewg?pwd=wtdg
-- Place `bracketire` and `bracketire_plus` folders in [`ckpt`](ckpt) folder.
-
-### 2.3 Training
-
-- Modify `dataroot`
-
-- For Track 1, run: [`sh train_track1.sh`](train_track1.sh)
-
-- For Track 2, modify `load_path` and run: [`sh train_track2.sh`](train_track2.sh)
-
-### 2.4 Testing
-
-- Modify `dataroot` and `name`
-
-- For Track 1, run: [`sh test_track1.sh`](test_track1.sh)
-
-- For Track 2, run: [`sh test_track2.sh`](test_track2.sh)
-
-### 2.5 Note
-
-- You can specify which GPU to use by `--gpu_ids`, e.g., `--gpu_ids 0,1`, `--gpu_ids 3`, `--gpu_ids -1` (for CPU mode). In the default setting, all GPUs are used.
-- You can refer to [options](./options/base_options.py) for more arguments.
+Please refer to the [README.md](../README.md) in the main folder.
 
 
 

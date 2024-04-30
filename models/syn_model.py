@@ -10,13 +10,13 @@ from util.util import mu_tonemap
 
 
 # For BracketIRE Task
-class TMRNetModel(BaseModel):
+class SynModel(BaseModel):
     @staticmethod
     def modify_commandline_options(parser, is_train=True):
         return parser
 
     def __init__(self, opt):
-        super(TMRNetModel, self).__init__(opt)
+        super(SynModel, self).__init__(opt)
 
         self.opt = opt
         self.loss_names = ['TMRNet_l1', 'Total']
@@ -57,7 +57,7 @@ class TMRNetModel(BaseModel):
         elif self.opt.chop:
             self.data_out = self.forward_chop(self.data_raws)
 
-    def forward_chop(self, data_raws, chop_size=800):
+    def forward_chop(self, data_raws, chop_size=200):
         n, t, c, h, w = data_raws.shape
         
         num_h = h // chop_size + 1
@@ -107,7 +107,7 @@ class TMRNet(nn.Module):
         # optical flow
         self.spynet = SPyNet()
         if opt.isTrain:
-            N.load_spynet(self.spynet, './spynet/spynet_20210409-c6c1bd09.pth')
+            N.load_spynet(self.spynet, './ckpt/spynet/spynet_20210409-c6c1bd09.pth')
 
         self.dcn_alignment = DeformableAlignment(mid_channels, mid_channels, 3, padding=1, deform_groups=8,
                 max_residue_magnitude=max_residue_magnitude)

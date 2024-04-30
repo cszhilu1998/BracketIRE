@@ -1,10 +1,10 @@
 #!/bin/bash
-echo "Start to train the model...."
-dataroot="/Data/bracketire_plus/"  # including 'Train' and 'NTIRE_Val' floders
 
-device='0'
-name="track2"
-load_path="xx" # path of pre-trained model for BracketIRE task
+echo "Start to train the model...."
+dataroot="/Data/dataset/MultiExpo/Syn_Plus/" 
+
+device='0,1'
+name="syn_plus_try"
 
 build_dir="./ckpt/"$name
 
@@ -14,9 +14,11 @@ fi
 
 LOG=./ckpt/$name/`date +%Y-%m-%d-%H-%M-%S`.txt
 
-python train.py \
-    --dataset_name bracketireplus    --model tmrnetplus    --name $name            --lr_policy cosine_warmup      \
+python ./syn_train.py \
+    --dataset_name synplus           --model synplus       --name $name            --lr_policy cosine_warmup      \
     --patch_size 64                  --niter 400           --save_imgs False       --lr 1e-4          --dataroot $dataroot   \
     --batch_size 8                   --print_freq 500      --calc_metrics True     --weight_decay 0.01 \
-    --gpu_ids $device     -j 8       --load_path  $load_path    | tee $LOG 
+    --load_path ./ckpt/syn/TMRNet_model_400.pth   \
+    --gpu_ids $device     -j 8     | tee $LOG 
 
+    # --load_path 'path of pre-trained model for synthetic BracketIRE task'
