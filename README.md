@@ -17,6 +17,8 @@ In this work, we propose to utilize bracketing photography to unify image restor
 
 ## News
 
+* **`2024-06-02`:** The training, inference and evaluation codes for real-world dataset have been released.
+
 * **`2024-05-01`:** The training, inference and evaluation codes for synthetic dataset have been released.
 
 * **`2024-03-26`:** The synthetic dataset has been released.
@@ -29,8 +31,7 @@ In this work, we propose to utilize bracketing photography to unify image restor
 
 ## 1. Abstract
 
-It is challenging but highly desired to acquire high-quality photos with clear content in low-light environments. Although multi-image processing methods (using burst, dual-exposure, or multi-exposure images) have made significant progress in addressing this issue, they typically focus exclusively on specific restoration or enhancement tasks, being insufficient in exploiting multi-image. Motivated by that multi-exposure images are complementary in denoising, deblurring, high dynamic range imaging, and super-resolution, we propose to utilize bracketing photography to unify restoration and enhancement tasks in this work. Due to the difficulty in collecting real-world pairs, we suggest a solution that first pre-trains the model with synthetic paired data and then adapts it to real-world unlabeled images. In particular, a temporally modulated recurrent network (TMRNet) and self-supervised adaptation method are proposed. Moreover, we construct a data simulation pipeline to synthesize pairs and collect real-world images from 200 nighttime scenarios. Experiments on both datasets show that our method performs favorably against the state-of-the-art multi-image processing ones.
-
+It is highly desired but challenging to acquire high-quality photos with clear content in low-light environments. Although multi-image processing methods (using burst, dual-exposure, or multi-exposure images) have made significant progress in addressing this issue, they typically focus on specific restoration or enhancement problems, and do not fully explore the potential of utilizing multiple images. Motivated by the fact that multi-exposure images are complementary in denoising, deblurring, high dynamic range imaging, and super-resolution, we propose to utilize exposure bracketing photography to unify image restoration and enhancement tasks in this work. Due to the difficulty in collecting real-world pairs, we suggest a solution that first pre-trains the model with synthetic paired data and then adapts it to real-world unlabeled images. In particular, a temporally modulated recurrent network (TMRNet) and self-supervised adaptation method are proposed. Moreover, we construct a data simulation pipeline to synthesize pairs and collect real-world images from 200 nighttime scenarios. Experiments on both datasets show that our method performs favorably against the state-of-the-art multi-image processing ones.
 
 
 ## 2. Prerequisites and Datasets
@@ -38,7 +39,8 @@ It is challenging but highly desired to acquire high-quality photos with clear c
 
 ### 2.1 Prerequisites
 - Python 3.x and **PyTorch 1.12**.
-- OpenCV, NumPy, Pillow, timm, tqdm, scikit-image and tensorboardX.
+- opencv, numpy, Pillow, timm, tqdm, scikit-image and tensorboardX.
+- We provide detailed dependencies in [`requirements.txt`](requirements.txt)
 
 ### 2.2 Synthetic Dataset
 
@@ -49,17 +51,19 @@ Please download the data from Baidu Netdisk (Chinese: 百度网盘).
 
 ### 2.3 Real-World Dataset
 
-TODO
+
+- Real-World dataset: https://pan.baidu.com/s/1PYCsRsKEs-tJcIYz_5Mbvg?pwd=7tmf
+
+
+### 2.4 Pre-Trained Models
+
+- Link: https://pan.baidu.com/s/10bQxDHaZ0sKB87tRooIewg?pwd=wtdg
+- Place `spynet`, `syn`, `syn_plus`, `real` and `real_plus` folders in [`ckpt`](ckpt) folder.
+
 
 ## 3. Quick Start for Synthetic Experiments
 
-
-### 3.1 Pre-Trained Models
-
-- Link: https://pan.baidu.com/s/10bQxDHaZ0sKB87tRooIewg?pwd=wtdg
-- Place `syn` and `syn_plus` folders in [`ckpt`](ckpt) folder.
-
-### 3.2 Training
+### 3.1 Training
 
 - BracketIRE task
     - Modify `dataroot`
@@ -69,7 +73,7 @@ TODO
     - Modify `dataroot` and  `load_path` 
     - Run [`sh ./syn_bash/train_synplus.sh`](./syn_bash/train_synplus.sh)
 
-### 3.3 Testing
+### 3.2 Testing
 
 - BracketIRE task
     - Modify `dataroot` and `name`
@@ -82,7 +86,26 @@ TODO
 
 ## 4. Quick Start for Real-World Experiments
 
-TODO
+
+### 4.1 Training
+
+- BracketIRE task
+    - Modify `dataroot`
+    - Run [`sh ./real_bash/train_real.sh`](./real_bash/train_real.sh)
+
+- BracketIRE+ task
+    - Modify `dataroot` 
+    - Run [`sh ./real_bash/train_realplus.sh`](./real_bash/train_realplus.sh)
+
+### 4.2 Testing
+
+- BracketIRE task
+    - Modify `dataroot` and `name`
+    - Run [`sh ./real_bash/test_real.sh`](./real_bash/test_real.sh)
+
+- BracketIRE+ task
+    - Modify `dataroot` and `name` 
+    - Run [`sh ./real_bash/test_realplus.sh`](./real_bash/test_realplus.sh)
 
 
 ## 5. Note
@@ -107,6 +130,17 @@ TODO
 
 
 
+## 6. Real-World Full-Image Results
+
+- BracketIRE task
+
+<p align="center"><img src="imgs/brackerire.jpg" width="95%"></p>
+
+- BracketIRE+ task
+
+<p align="center"><img src="imgs/brackerire_plus.jpg" width="95%"></p>
+
+<!-- 
 ## 7. Real-World Results
 
 
@@ -114,7 +148,7 @@ TODO
 
 <p align="center"><img src="imgs/real-1a.png" width="95%"></p>
 
-<p align="center"><img src="imgs/real-2a.png" width="95%"></p>
+<p align="center"><img src="imgs/real-2a.png" width="95%"></p> -->
 
 
 

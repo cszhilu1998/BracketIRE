@@ -41,7 +41,7 @@ if __name__ == '__main__':
     parser.add_argument('--dataroot', type=str, default='/Data/dataset/MultiExpo/Syn/')
     parser.add_argument('--name', type=str, default="bracketire")
     parser.add_argument('--plus', type=str2bool, default=False)
-    parser.add_argument('--save_img', type=str, default="output_vispng_400")	
+    parser.add_argument('--save_img', type=str, default="output_syn_vispng_400")	
     parser.add_argument('--device', default="0")
     args = parser.parse_args()
 
@@ -59,7 +59,7 @@ if __name__ == '__main__':
     for file in files:
         print('Start to measure images in %s...' % (file))
         metrics = np.zeros([290, 3])
-        log_dir = '%s/metrics_%s.txt' % (file.replace('/' + file.split('/')[-2] + '/', ''), file[-4:-1])
+        log_dir = '%s/syn_metrics_%s.txt' % (file.replace('/' + file.split('/')[-2] + '/', ''), file[-4:-1])
         print(log_dir)
         f = open(log_dir, 'a')
         i = 0

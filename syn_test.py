@@ -63,7 +63,7 @@ if __name__ == '__main__':
                 if opt.save_imgs:
                     # path for saving images
                     file_name = data['fname'][0].split('-')
-                    folder_dir = './ckpt/%s/output_vispng_%03d/%s' % (opt.name, load_iter, file_name[0])  
+                    folder_dir = './ckpt/%s/output_syn_vispng_%03d/%s' % (opt.name, load_iter, file_name[0])  
                     os.makedirs(folder_dir, exist_ok=True)
                     save_dir_vispng = '%s/%s.png' % (folder_dir, file_name[1])
 

@@ -49,8 +49,9 @@ class BaseOptions():
         parser.add_argument('--chop', type=str2bool, default=False)
         parser.add_argument('--crop_patch', type=int, default=48)
         parser.add_argument('--self_weight', type=float, default=1)
-        parser.add_argument('--neg_weight', type=float, default=1)
+        parser.add_argument('--neg_weight', type=float, default=0)
         parser.add_argument('--exposure', type=int, default=1)
+        parser.add_argument('--scale', type=int, default=1)
 
         # training parameters
         parser.add_argument('--init_type', type=str, default='default',
@@ -154,9 +155,9 @@ class BaseOptions():
         opt.model = opt.model.lower()
         opt.name = opt.name.lower()
 
-        scale_patch = {2: 96, 3: 144, 4: 192}
-        if opt.patch_size is None:
-            opt.patch_size = scale_patch[opt.scale]
+        # scale_patch = {2: 96, 3: 144, 4: 192}
+        # if opt.patch_size is None:
+        #     opt.patch_size = scale_patch[opt.scale]
 
         if opt.name.startswith(opt.checkpoints_dir):
             opt.name = opt.name.replace(opt.checkpoints_dir+'/', '')

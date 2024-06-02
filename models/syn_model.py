@@ -9,7 +9,7 @@ import torchvision.ops as ops
 from util.util import mu_tonemap
 
 
-# For BracketIRE Task
+# For Synthetic BracketIRE Task
 class SynModel(BaseModel):
     @staticmethod
     def modify_commandline_options(parser, is_train=True):
@@ -57,7 +57,7 @@ class SynModel(BaseModel):
         elif self.opt.chop:
             self.data_out = self.forward_chop(self.data_raws)
 
-    def forward_chop(self, data_raws, chop_size=200):
+    def forward_chop(self, data_raws, chop_size=800):
         n, t, c, h, w = data_raws.shape
         
         num_h = h // chop_size + 1

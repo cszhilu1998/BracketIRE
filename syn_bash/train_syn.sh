@@ -1,7 +1,7 @@
 #!/bin/bash
 
 echo "Start to train the model...."
-dataroot="/Data/dataset/MultiExpo/Syn/"
+dataroot="/Dataset/MultiExpo/Syn/"
 
 device='0,1'
 name="syn_try"
