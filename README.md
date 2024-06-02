@@ -130,7 +130,7 @@ Please download the data from Baidu Netdisk (Chinese: 百度网盘).
 
 
 
-## 6. Real-World Full-Image Results
+## 7. Real-World Full-Image Results
 
 - BracketIRE task
 
