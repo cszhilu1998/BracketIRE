@@ -3,10 +3,23 @@
 
 **The challenge has ended.**
 
-
 **The codes in this page are out of date and have been cleared.**
 
 **If you want to try [BracketIRE and BracketIRE+](https://arxiv.org/abs/2401.00766) tasks, please refer to the codes in the [main](../) folder.**
+
+
+> [**NTIRE 2024 Challenge on Bracketing Image Restoration and Enhancement: Datasets Methods and Results**](https://openaccess.thecvf.com/content/CVPR2024W/NTIRE/html/Zhang_NTIRE_2024_Challenge_on_Bracketing_Image_Restoration_and_Enhancement__CVPRW_2024_paper.html)<br>
+> [Zhilu Zhang $^1$](https://scholar.google.com/citations?user=8pIq2N0AAAAJ), [Shuohao Zhang $^1$](https://scholar.google.com/citations?hl=zh-CN&user=PwP5O3MAAAAJ), [Renlong Wu $^1$](https://scholar.google.com/citations?hl=zh-CN&user=UpOaYLoAAAAJ), [Wangmeng Zuo $^1$](https://scholar.google.com/citations?user=rUOpCEYAAAAJ), [Radu Timofte $^2$](https://scholar.google.com/citations?user=u3MwH5kAAAAJ&hl=zh-CN&oi=ao)
+<br>$^1$ Harbin Institute of Technology, China
+<br>$^2$ University of Würzburg, Germany
+
+
+[**Challenge Report**](https://openaccess.thecvf.com/content/CVPR2024W/NTIRE/html/Zhang_NTIRE_2024_Challenge_on_Bracketing_Image_Restoration_and_Enhancement__CVPRW_2024_paper.html) &nbsp; | &nbsp; 
+[**Slides**](https://drive.google.com/file/d/1pD549TKzNjII6CpnwB05UZ4V-U4OK5Kg/view?usp=drive_link) &nbsp; | &nbsp; 
+[**Video**](https://drive.google.com/file/d/1moSKjFXR8FqJ_Oh11z94wABwemF4LrIh/view?usp=drive_link) &nbsp; | &nbsp; 
+[**Poster**](https://drive.google.com/file/d/1iqKMpEvUfjlFCY_MZcDKDJoHkxrGDHe8/view?usp=drive_link) 
+
+
 
 ## 1. Overview
 
