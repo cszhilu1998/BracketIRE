@@ -9,7 +9,7 @@
 
 
 > [**NTIRE 2024 Challenge on Bracketing Image Restoration and Enhancement: Datasets Methods and Results**](https://openaccess.thecvf.com/content/CVPR2024W/NTIRE/html/Zhang_NTIRE_2024_Challenge_on_Bracketing_Image_Restoration_and_Enhancement__CVPRW_2024_paper.html)<br>
-> [Zhilu Zhang $^1$](https://scholar.google.com/citations?user=8pIq2N0AAAAJ), [Shuohao Zhang $^1$](https://scholar.google.com/citations?hl=zh-CN&user=PwP5O3MAAAAJ), [Renlong Wu $^1$](https://scholar.google.com/citations?hl=zh-CN&user=UpOaYLoAAAAJ), [Wangmeng Zuo $^1$](https://scholar.google.com/citations?user=rUOpCEYAAAAJ), [Radu Timofte $^2$](https://scholar.google.com/citations?user=u3MwH5kAAAAJ&hl=zh-CN&oi=ao)
+> [Zhilu Zhang](https://scholar.google.com/citations?user=8pIq2N0AAAAJ)$^1$, [Shuohao Zhang](https://scholar.google.com/citations?hl=zh-CN&user=PwP5O3MAAAAJ)$^1$, [Renlong Wu](https://scholar.google.com/citations?hl=zh-CN&user=UpOaYLoAAAAJ)$^1$, [Wangmeng Zuo](https://scholar.google.com/citations?user=rUOpCEYAAAAJ)$^1$, [Radu Timofte](https://scholar.google.com/citations?user=u3MwH5kAAAAJ&hl=zh-CN&oi=ao)$^2$, et al.
 <br>$^1$ Harbin Institute of Technology, China
 <br>$^2$ University of Würzburg, Germany
 
