@@ -3,15 +3,28 @@
 Official PyTorch implementation of **Exposure Bracketing is All You Need**
 
 
+In this work, we propose to utilize bracketing photography to unify image restoration and enhancement tasks, including image denoising, deblurring, high dynamic range reconstruction, and super-resolution. The paper is as follows:
+
 > [**Exposure Bracketing is All You Need for Unifying Image Restoration and Enhancement Tasks**](https://arxiv.org/abs/2401.00766)<br>
 > [Zhilu Zhang](https://scholar.google.com/citations?user=8pIq2N0AAAAJ), [Shuohao Zhang](https://scholar.google.com/citations?hl=zh-CN&user=PwP5O3MAAAAJ), [Renlong Wu](https://scholar.google.com/citations?hl=zh-CN&user=UpOaYLoAAAAJ), [Zifei Yan](https://scholar.google.com/citations?hl=zh-CN&user=I4vuL7kAAAAJ), [Wangmeng Zuo](https://scholar.google.com/citations?user=rUOpCEYAAAAJ)
-<br>Harbin Institute of Technology, China
+<br>Harbin Institute of Technology, China <br>
+> [**arXiv**](https://arxiv.org/abs/2401.00766)
+
+<!-- [![arXiv](https://img.shields.io/badge/arXiv-2401.00766-b10.svg)](https://arxiv.org/abs/2401.00766) -->
 
 
-[![arXiv](https://img.shields.io/badge/arXiv-2401.00766-b10.svg)](https://arxiv.org/abs/2401.00766)
+We organized a [Bracketing Image Restoration and Enhancement Challenge](https://github.com/cszhilu1998/BracketIRE/tree/master/NTIRE2024)  on [NTIRE Workshop](https://cvlai.net/ntire/2024/) of CVPR 2024. The challenge report is as follows:
+
+> [**NTIRE 2024 Challenge on Bracketing Image Restoration and Enhancement: Datasets Methods and Results**](https://openaccess.thecvf.com/content/CVPR2024W/NTIRE/html/Zhang_NTIRE_2024_Challenge_on_Bracketing_Image_Restoration_and_Enhancement__CVPRW_2024_paper.html)<br>
+> [Zhilu Zhang](https://scholar.google.com/citations?user=8pIq2N0AAAAJ)$^1$, [Shuohao Zhang](https://scholar.google.com/citations?hl=zh-CN&user=PwP5O3MAAAAJ)$^1$, [Renlong Wu](https://scholar.google.com/citations?hl=zh-CN&user=UpOaYLoAAAAJ)$^1$, [Wangmeng Zuo](https://scholar.google.com/citations?user=rUOpCEYAAAAJ)$^1$, [Radu Timofte](https://scholar.google.com/citations?user=u3MwH5kAAAAJ&hl=zh-CN&oi=ao)$^2$, et al.
+<br>$^1$ Harbin Institute of Technology, China
+<br>$^2$ University of Würzburg, Germany <br>
+> [**Challenge Report**](https://openaccess.thecvf.com/content/CVPR2024W/NTIRE/html/Zhang_NTIRE_2024_Challenge_on_Bracketing_Image_Restoration_and_Enhancement__CVPRW_2024_paper.html) &nbsp; | &nbsp;  [**Slides**](https://drive.google.com/file/d/1pD549TKzNjII6CpnwB05UZ4V-U4OK5Kg/view?usp=drive_link) &nbsp; | &nbsp; 
+[**Video**](https://drive.google.com/file/d/1moSKjFXR8FqJ_Oh11z94wABwemF4LrIh/view?usp=drive_link) &nbsp; | &nbsp; 
+[**Poster**](https://drive.google.com/file/d/1iqKMpEvUfjlFCY_MZcDKDJoHkxrGDHe8/view?usp=drive_link) 
+
+
 ![visitors](https://visitor-badge.laobi.icu/badge?page_id=cszhilu1998.BracketIRE)
-
-In this work, we propose to utilize bracketing photography to unify image restoration and enhancement tasks, including image denoising, deblurring, high dynamic range reconstruction, and super-resolution.
 
 <!-- - Codes will be released in a few weeks. -->
 
