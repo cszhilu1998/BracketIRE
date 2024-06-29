@@ -51,7 +51,7 @@ It is highly desired but challenging to acquire high-quality photos with clear c
 
 
 ### 2.1 Prerequisites
-- Python 3.x and **PyTorch 1.12**.
+- Python 3.9 and **PyTorch 1.12**.
 - opencv, numpy, Pillow, timm, tqdm, scikit-image and tensorboardX.
 - We provide detailed dependencies in [`requirements.txt`](requirements.txt)
 
