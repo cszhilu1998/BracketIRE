@@ -73,6 +73,7 @@ Please download the data from Baidu Netdisk (Chinese: 百度网盘).
 - Link: https://pan.baidu.com/s/10bQxDHaZ0sKB87tRooIewg?pwd=wtdg
 - Place `spynet`, `syn`, `syn_plus`, `real` and `real_plus` folders in [`ckpt`](ckpt) folder.
 
+**Note: If you cannot get a Baidu account, please use [TeraBox](https://terabox.com) and click [https://terabox.com/s/1nZzGx4Anlp0syXcRhd6xqw](https://terabox.com/s/1nZzGx4Anlp0syXcRhd6xqw) to download.**
 
 ## 3. Quick Start for Synthetic Experiments
 
