@@ -1,16 +1,15 @@
-# Exposure Bracketing is All You Need
+# Exposure Bracketing Is All You Need (ICLR 2025)
 
-Official PyTorch implementation of **Exposure Bracketing is All You Need**
+Official PyTorch implementation of **Exposure Bracketing Is All You Need**
 
 
-In this work, we propose to utilize bracketing photography to unify image restoration and enhancement tasks, including image denoising, deblurring, high dynamic range reconstruction, and super-resolution. The paper is as follows:
+In this work, we propose to utilize bracketing photography to get a high-quality image by combining image denoising, deblurring, high dynamic range reconstruction, and super-resolution tasks. The paper is as follows:
 
-> [**Exposure Bracketing is All You Need for Unifying Image Restoration and Enhancement Tasks**](https://arxiv.org/abs/2401.00766)<br>
+> [**Exposure Bracketing Is All You Need For A High-Quality Image**](https://arxiv.org/abs/2401.00766)<br>
 > [Zhilu Zhang](https://scholar.google.com/citations?user=8pIq2N0AAAAJ), [Shuohao Zhang](https://scholar.google.com/citations?hl=zh-CN&user=PwP5O3MAAAAJ), [Renlong Wu](https://scholar.google.com/citations?hl=zh-CN&user=UpOaYLoAAAAJ), [Zifei Yan](https://scholar.google.com/citations?hl=zh-CN&user=I4vuL7kAAAAJ), [Wangmeng Zuo](https://scholar.google.com/citations?user=rUOpCEYAAAAJ)
 <br>Harbin Institute of Technology, China <br>
-> [**arXiv**](https://arxiv.org/abs/2401.00766)
+> [**OpenReview**](https://openreview.net/forum?id=rDIf6NA5mj) &nbsp; | &nbsp;  [**arXiv**](https://arxiv.org/abs/2401.00766)
 
-<!-- [![arXiv](https://img.shields.io/badge/arXiv-2401.00766-b10.svg)](https://arxiv.org/abs/2401.00766) -->
 
 
 We organized a [Bracketing Image Restoration and Enhancement Challenge](https://github.com/cszhilu1998/BracketIRE/tree/master/NTIRE2024)  on [NTIRE Workshop](https://cvlai.net/ntire/2024/) of CVPR 2024. The challenge report is as follows:
@@ -30,6 +29,9 @@ We organized a [Bracketing Image Restoration and Enhancement Challenge](https://
 
 ## News
 
+
+* **`2025-01-22`:** The paper has been accepted by ICLR 2025.
+
 * **`2024-06-02`:** The training, inference and evaluation codes for real-world dataset have been released.
 
 * **`2024-05-01`:** The training, inference and evaluation codes for synthetic dataset have been released.
@@ -44,7 +46,8 @@ We organized a [Bracketing Image Restoration and Enhancement Challenge](https://
 
 ## 1. Abstract
 
-It is highly desired but challenging to acquire high-quality photos with clear content in low-light environments. Although multi-image processing methods (using burst, dual-exposure, or multi-exposure images) have made significant progress in addressing this issue, they typically focus on specific restoration or enhancement problems, and do not fully explore the potential of utilizing multiple images. Motivated by the fact that multi-exposure images are complementary in denoising, deblurring, high dynamic range imaging, and super-resolution, we propose to utilize exposure bracketing photography to unify image restoration and enhancement tasks in this work. Due to the difficulty in collecting real-world pairs, we suggest a solution that first pre-trains the model with synthetic paired data and then adapts it to real-world unlabeled images. In particular, a temporally modulated recurrent network (TMRNet) and self-supervised adaptation method are proposed. Moreover, we construct a data simulation pipeline to synthesize pairs and collect real-world images from 200 nighttime scenarios. Experiments on both datasets show that our method performs favorably against the state-of-the-art multi-image processing ones.
+It is highly desired but challenging to acquire high-quality photos with clear content in low-light environments. Although multi-image processing methods (using burst, dual-exposure, or multi-exposure images) have made significant progress in addressing this issue, they typically focus on specific restoration or enhancement problems, and do not fully explore the potential of utilizing multiple images. Motivated by the fact that multi-exposure images are complementary in denoising, deblurring, high dynamic range imaging, and super-resolution, we propose to utilize exposure bracketing photography to get a high-quality image by combining these tasks in this work. Due to the difficulty in collecting real-world pairs, we suggest a solution that first pre-trains the model with synthetic paired data and then adapts it to real-world unlabeled images. In particular, a temporally modulated recurrent network (TMRNet) and self-supervised adaptation method are proposed. Moreover, we construct a data simulation pipeline to synthesize pairs and collect real-world images from 200 nighttime scenarios. Experiments on both datasets show that our method performs favorably against the state-of-the-art multi-image processing ones.
+
 
 
 ## 2. Prerequisites and Datasets
@@ -140,7 +143,7 @@ Please download the data from Baidu Netdisk (Chinese: 百度网盘).
 
 ## 6. Comparison of Multi-Image Processing Manners
 
-<p align="center"><img src="imgs/multi_pro1.png" width="95%"></p>
+<p align="center"><img src="imgs/multi_pro.png" width="95%"></p>
 
 
 
@@ -169,11 +172,11 @@ Please download the data from Baidu Netdisk (Chinese: 百度网盘).
 ## 8. Citation
 If you find it useful in your research, please consider citing:
 
-    @article{BracketIRE,
-        title={Exposure Bracketing is All You Need for Unifying Image Restoration and Enhancement Tasks},
+    @inproceedings{BracketIRE,
+        title={Exposure Bracketing Is All You Need For A High-Quality Image},
         author={Zhang, Zhilu and Zhang, Shuohao and Wu, Renlong and Yan, Zifei and Zuo, Wangmeng},
-        journal={arXiv preprint arXiv:2401.00766},
-        year={2024}
+        booktitle={ICLR},
+        year={2025}
     }
 
     @inproceedings{ntire2024bracketing,
