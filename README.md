@@ -30,6 +30,8 @@ We organized a [Bracketing Image Restoration and Enhancement Challenge](https://
 ## News
 
 
+* **`2025-01-24`:** The code for generating synthetic dataset have been released in [syn_data_gen](./syn_data_gen/) folder.
+
 * **`2025-01-22`:** The paper has been accepted by ICLR 2025.
 
 * **`2024-06-02`:** The training, inference and evaluation codes for real-world dataset have been released.
@@ -64,6 +66,8 @@ Please download the data from Baidu Netdisk (Chinese: 百度网盘).
 
 - BracketIRE task: https://pan.baidu.com/s/1Jy8G36Njg68UbzsbOEKdZQ?pwd=v4nn
 - BracketIRE+ task: https://pan.baidu.com/s/1AKHppSl8ejKR8a8-tnVigA?pwd=kvsd
+
+- We also release the code for generating synthetic dataset in [syn_data_gen](./syn_data_gen/) folder. If you want to customize the synthetic data, you can modify `read_path`,  `write_root`, and ISP parameters in [gen_bracket.py](./syn_data_gen/gen_bracket.py) and [gen_bracketplus.py](./syn_data_gen/gen_bracketplus.py) for BracketIRE and BracketIRE+ tasks, respectively.
 
 ### 2.3 Real-World Dataset
 

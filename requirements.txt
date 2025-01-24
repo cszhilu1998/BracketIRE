@@ -1,6 +1,7 @@
 colour_demosaicing==0.2.5
 einops==0.4.1
 ExifRead==3.0.0
+imageio==2.21.1
 lpips==0.1.4
 matplotlib==3.5.3
 numpy==1.23.1
